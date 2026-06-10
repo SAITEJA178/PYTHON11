@@ -17,4 +17,31 @@ for i in range(5):
         pos = pos+1
 
 # Python 13
+a=(2,333333333,4,5)
+b=(3,4444,5,6)
+print(a,b)
 
+# Python 14
+a=[2,4,7,8,9,6]
+b=[3,7,7,9,6,7]
+a.append({2,4})
+b.append({3,7,7,9,6})
+print(a)
+
+# Python 15
+a=[[" " for i in range(11)] for i in range(10)]
+
+for i in range(10):
+    for j in range(11):
+        if j==0 or j==10:
+            a[i][j]="*"
+        if i==j and i<=5:
+            a[i][j]="*"
+        if i+j==10 and j>5:
+            a[i][j]="*"
+for i in range(10):
+    for j in range(11):
+        print(a[i][j],end="")
+    print()
+            
+            
