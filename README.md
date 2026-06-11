@@ -73,3 +73,48 @@ for i in s:
         print(sum)
 
 # Python 18
+Col = "HITS"
+
+class AIML:
+
+dept = "Artificial"
+
+def set_dim(self, a, b, c, d):
+
+self.m1 = a
+
+self.m2 = b
+
+self.m3 = c
+
+self.name = d
+
+def display(self):
+
+print("1. Name:", self.name) print("2. Average Mark:", (self.m1 + self.m2 + self.m3) // 3) print("3. Dept:", AIML.dept)
+
+print("4. College:", col)
+
+Class CSE:
+
+dept = "Computer"
+
+def set_dim(self, a, b, c, d):
+
+self.m1 = a
+
+self.m2 = b
+
+self.m3 = c
+
+self.name = d
+
+def display(seljf):
+
+print("1. Name:", self.name)
+
+print("2. Average Mark:", (self.m1+ self.m2 self.m3) // 3)
+
+print("3. Dept:", CSE.dept)
+
+print("4. College:", col)
