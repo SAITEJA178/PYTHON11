@@ -73,48 +73,65 @@ for i in s:
         print(sum)
 
 # Python 18
-Col = "HITS"
+
+col = "HITS"
 
 class AIML:
+    dept = "Artificial"
 
-dept = "Artificial"
+    def set_dim(self, a, b, c, d):
+        self.m1 = a
+        self.m2 = b
+        self.m3 = c
+        self.name = d
 
-def set_dim(self, a, b, c, d):
+    def display(self):
+        print("1. Name:", self.name)
+        print("2. Average Mark:", (self.m1 + self.m2 + self.m3) // 3)
+        print("3. Dept:", AIML.dept)
+        print("4. College:", col)
 
-self.m1 = a
 
-self.m2 = b
+class CSE:
+    dept = "Computer"
 
-self.m3 = c
+    def set_dim(self, a, b, c, d):
+        self.m1 = a
+        self.m2 = b
+        self.m3 = c
+        self.name = d
 
-self.name = d
+    def display(self):
+        print("1. Name:", self.name)
+        print("2. Average Mark:", (self.m1 + self.m2 + self.m3) // 3)
+        print("3. Dept:", CSE.dept)2
+        print("4. College:", col)
 
-def display(self):
 
-print("1. Name:", self.name) print("2. Average Mark:", (self.m1 + self.m2 + self.m3) // 3) print("3. Dept:", AIML.dept)
+s1 = AIML()
+s1.set_dim(85, 90, 88, "Arun")
+s1.display()
 
-print("4. College:", col)
+print()
 
-Class CSE:
+s2 = CSE()
+s2.set_dim(78, 82, 80, "Priya")
+s2.display()
 
-dept = "Computer"
+# Python 19
 
-def set_dim(self, a, b, c, d):
+class Rect:
+    def __init__(self, a, b):
+        self.l = a
+        self.b = b
 
-self.m1 = a
+    def display(self):
+        print("Area:", self.l * self.b)
 
-self.m2 = b
 
-self.m3 = c
+r = Rect(10, 20)
+s = Rect(13, 14)
 
-self.name = d
+r.display()
+s.display()
 
-def display(seljf):
-
-print("1. Name:", self.name)
-
-print("2. Average Mark:", (self.m1+ self.m2 self.m3) // 3)
-
-print("3. Dept:", CSE.dept)
-
-print("4. College:", col)
