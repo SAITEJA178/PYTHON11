@@ -43,5 +43,33 @@ for i in range(10):
     for j in range(11):
         print(a[i][j],end="")
     print()
-            
-            
+
+# Python 16
+class abc:
+    def set_dim(self):
+        x = int(input("Enter the num1: "))
+        y = int(input("Enter the num2: "))
+
+        self.a = x
+        self.b = y
+
+    def display(self):
+        print(self.a + self.b)
+
+
+a1 = abc()      
+a1.set_dim()   
+a1.display()  
+
+# Python 17
+
+d={'A':1,'B':10,'C':100,'D':1000,'E':100000}
+s="ABCDEF"
+
+sum = 0
+for i in s:
+    if i in d.keys():
+        sum = sum+d[i]
+        print(sum)
+
+# Python 18
